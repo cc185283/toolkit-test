@@ -3,6 +3,7 @@ apiVersion: v1      # see https://kubernetes.io/docs/reference/generated/kuberne
 kind: Pod           # type of object that's defined in this file
 metadata:
   name: pod-httpd   # the name displayed in the first column of 'kubectl get pods'
+  namespace: test
   labels:
     app: apache_webserver  # this tag is added to help this object to link to the service object.
 spec:
